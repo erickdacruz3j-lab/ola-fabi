@@ -1,0 +1,118 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    color: #222;
+    transition: 0.3s;
+}
+
+/* BOTÃO MODO ESCURO */
+.btn-theme {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Header */
+header {
+    background: #4a90e2;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Galeria */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#post-text {
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#btn-postar {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Botão Curtir */
+.like-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* 🌙 MODO ESCURO */
+.dark {
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.dark header {
+    background: #222;
+}
+
+.dark .post {
+    background: #333;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #post-text {
+        width: 100%;
+    }
+}
