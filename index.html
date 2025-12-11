@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech e Inteligência Artificial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BOTÃO DE MODO ESCURO -->
+    <button id="toggle-theme" class="btn-theme">🌙 Modo Escuro</button>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Tech e Inteligência Artificial</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de apresentação -->
+    <section id="sobre">
+        <h2>Bem-vindo ao Futuro Tecnológico!</h2>
+        <p>A inteligência artificial está revolucionando todos os setores da tecnologia.</p>
+        <img src="img/AI.jpeg" alt="IA Inovadora">
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria">
+        <h2>Galeria de Projetos em IA</h2>
+        <div class="grid-galeria">
+            <figure>
+                <img src="img/IA1.jpg" alt="Projeto IA 1">
+                <figcaption>IA em robótica</figcaption>
+            </figure>
+            <figure>
+                <img src="img/IA2.png" alt="Projeto IA 2">
+                <figcaption>IA na medicina</figcaption>
+            </figure>
+            <figure>
+                <img src="img/IA3.jpg" alt="Projeto IA 3">
+                <figcaption>IA em automação</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Vídeo -->
+    <section id="video">
+        <h2>Conheça mais sobre IA</h2>
+        <video controls>
+            <source src="video/Preset_de_Vídeo_IA_e_Sociedade.mp4" type="video/mp4">
+        </video>
+        <figcaption>Impacto da IA na sociedade moderna</figcaption>
+    </section>
+
+    <!-- Lista -->
+    <section>
+        <h2>Principais Aplicações em IA</h2>
+        <ol>
+            <li>Machine Learning</li>
+            <li>Visão Computacional</li>
+            <li>Assistentes Virtuais</li>
+            <li>Processamento de Linguagem</li>
+            <li>Análise Preditiva</li>
+        </ol>
+    </section>
+
+    <!-- 🔥 SISTEMA DE POSTS -->
+    <section id="posts">
+        <h2>Criar Post</h2>
+        <textarea id="post-text" placeholder="Escreva algo..."></textarea>
+        <button id="btn-postar">Postar</button>
+
+        <div id="posts-container">
+            <h3>Posts Criados</h3>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Tech e Inteligência Artificial | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
